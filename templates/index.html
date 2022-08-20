@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../statics/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Paris housing</title>
+
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Paris House prediction</h1>
+    </div>
+
+    <form action="/predict" method="POST" class="box">
+      <p>
+        <label for="item">Enter the square-meters of the house you want</label>
+      </p>
+
+      <p>
+        <input
+          name="squaremeter"
+          id="item"
+          autofocus
+          type="number"
+          min="20"
+          class="item_input"
+        />
+      </p>
+
+      <p>
+        <button class="button" type="submit">Check predicted price</button>
+      </p>
+    </form>
+
+    <div class="list">
+      <ul>
+        {% if prices %} Estimated Price of a 
+        <br />
+         {{ sizes }} squaremeters house is <br /> {{ prices }} Euros {% endif %} 
+      </ul>
+    </div>
+  </body>
+</html>

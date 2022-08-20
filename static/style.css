@@ -1,0 +1,125 @@
+html{
+    font-size: 16px;
+    height: 100vh;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100%;
+    background-image: url(./paris.jpg);
+    background-size:contain;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+  
+    
+  
+  }
+  
+  .box {
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    background-color: rgba(80, 24, 58, 0.612);
+    align-self: center;
+    justify-items: center;
+    height: fit-content;
+    border: solid rgba(0, 0, 0, 0.528);
+    border: 2px;
+    border-radius: 5px;
+    color: rgb(255, 229, 181);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .heading {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    color: rgb(255, 229, 181);
+    font-weight: 900;
+    font-size: 30px
+    
+  }
+  
+  .button{
+    display: ;
+    width: 250px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border: solid rgba(0, 0, 0, 0.528);
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0px 0px 3px;
+   
+  }
+  
+  p{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+  }
+  
+  .list{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgba(245, 220, 220, 0.443);
+    margin-top: 50px;
+    height: fit-content;
+    color: black;
+    font-weight: 900;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.528);
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 27px;
+    text-align: center;
+    
+  }
+  
+  
+  .item {
+    display: flex;
+    color: brown;
+    justify-content: space-between;
+    padding: 5px 20px 5px 5px;
+
+  
+  }
+  
+.item_input {
+    background-color: rgba(240, 248, 255, 0.484);
+    font-weight: 900;
+    text-align: center;
+    height: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+
+  }
+  
+  .items_button {
+    font-family: inherit;
+    color: black;
+    font-size: 16px;
+
+
+  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .box,.list{
+      width: 65%;
+    }
+  
+   .button{
+      width: 100px;
+    }
+  }
